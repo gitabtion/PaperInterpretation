@@ -19,7 +19,7 @@
 ## 3. 核心技术方案
 ACT是一个两阶段的强化学习训练 pipeline，针对部分可观测马尔可夫决策过程（POMDP）场景下的LLM Agent设计：
 
-![Figure 2: Overview of the ACT + RL training pipeline](images/2026-03-11/figure1_arch.png)
+![Figure 2: Overview of the ACT + RL training pipeline](https://github.com/gitabtion/PaperInterpretation/blob/main/images/2026-03-11/figure1_arch.png?raw=true)
 
 ### 3.1 数据构造阶段
 对于训练集中的每个专家状态-动作对 $(s_i, a_i)$，构造对比样本：
@@ -47,7 +47,17 @@ $$R(s, y) = R_{acc} + R_{adm} + R_{fmt}$$
 ## 4. 实验结果与关键发现
 研究在三个不同的Agent基准测试集上验证了ACT的效果：ALFWorld（具身任务）、WebShop（网页导航）、ScienceWorld（科学实验），使用Qwen3-8B和Qwen3-4B模型。
 
-![Table 1: Main results on Qwen3-8B (%)](images/2026-03-11/figure2_results.png)
+### Table 1: Main results on Qwen3-8B (%)
+| Method | ALFWorld (ID) | ALFWorld (OOD) | WebShop | ScienceWorld |
+|--------|---------------|----------------|---------|---------------|
+| Prompt w/o CoT thinking | 35.71 | 27.61 | 2.80 | 28.01 |
+| Prompt w/ CoT thinking | 56.43 | 50.00 | 3.00 | 25.21 |
+| ACT (only critical training) | 72.86 | 72.39 | 7.40 | 26.71 |
+| Imitation Learning | 85.71 | 82.84 | 28.00 | 42.80 |
+| Early Experience (Self-Reflection) | 87.86 | 85.82 | 31.00 | 45.60 |
+| IL w/ ACT | 91.43 | 87.31 | 31.60 | 48.69 |
+| RL | 90.71 | 84.33 | 29.40 | 43.04 |
+| RL w/ ACT | 92.86 | 88.06 | 33.80 | 50.34 |
 
 ### 4.1 性能提升显著
 - 作为预训练阶段使用时，ACT比单纯模仿学习平均性能提升5.07个百分点，比单纯强化学习平均提升4.62个百分点
