@@ -19,7 +19,7 @@
 ## 3. 核心技术方案
 ACT是一个两阶段的强化学习训练 pipeline，针对部分可观测马尔可夫决策过程（POMDP）场景下的LLM Agent设计：
 
-![ACT两阶段训练架构图（ArXiv官方原始图）](images/2026-03-11/figure1_arch.png)
+![ACT两阶段训练架构图（ArXiv官方原始图）](images/2026-03-11/figure1_arch.svg)
 
 ### 3.1 数据构造阶段
 对于训练集中的每个专家状态-动作对 $(s_i, a_i)$，构造对比样本：
@@ -47,7 +47,7 @@ $$R(s, y) = R_{acc} + R_{adm} + R_{fmt}$$
 ## 4. 实验结果与关键发现
 研究在三个不同的Agent基准测试集上验证了ACT的效果：ALFWorld（具身任务）、WebShop（网页导航）、ScienceWorld（科学实验），使用Qwen3-8B和Qwen3-4B模型。
 
-![各基准测试集性能对比结果（ArXiv官方原始图）](images/2026-03-11/figure2_results.png)
+![各基准测试集性能对比结果（ArXiv官方原始图）](images/2026-03-11/figure2_results.svg)
 
 ### 4.1 性能提升显著
 - 作为预训练阶段使用时，ACT比单纯模仿学习平均性能提升5.07个百分点，比单纯强化学习平均提升4.62个百分点
