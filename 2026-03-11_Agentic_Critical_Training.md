@@ -6,7 +6,6 @@
 - **作者团队**：马里兰大学帕克分校 Weize Liu、Minghui Liu 等
 - **领域**：AI Agent、强化学习、大语言模型
 - **论文链接**：https://arxiv.org/abs/2603.08706
-- **代码仓库**：https://github.com/ajayn1997/Self-Critical-Sequential-training-with-RL-for-chatbots
 
 ## 2. 研究背景与问题提出
 当前LLM Agent训练主要依赖模仿学习（Imitation Learning，IL），通过在专家演示数据上微调让模型复制成功行为，但这种方法存在本质缺陷：
