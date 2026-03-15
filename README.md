@@ -18,5 +18,3 @@
 |------|----------|------|------|
 | 2026-03-11 | Agentic Critical Training（ACT）——让AI Agent真正学会批判性思考 | AI Agent、强化学习 | [查看](./2026-03-11_Agentic_Critical_Training.md) |
 | 2026-03-12 | InternVL-U：4B参数实现统一多模态能力，让AGI级多模态能力民主化 | 多模态大模型、计算机视觉 | [查看](./2026-03-12_InternVL-U_统一多模态模型的民主化之路.md) |
-| 2026-03-13 | OpenClaw-RL: Train Any Agent Simply by Talking——仅通过对话就能训练任意智能体的强化学习框架 | AI Agent、强化学习 | [查看](./20260313_OpenClaw-RL_论文解读_Train Any Agent Simply by Talking.md) |
-| 2026-03-14 | Neural Thickets: 预训练权重周围密集分布着多样化任务专家 | 大模型优化、后训练 | [查看](./20260314_Neural_Thickets_MIT_解读.md) |
