@@ -20,3 +20,4 @@
 | 2026-03-12 | InternVL-U：4B参数实现统一多模态能力，让AGI级多模态能力民主化 | 多模态大模型、计算机视觉 | [查看](./2026-03-12_InternVL-U_统一多模态模型的民主化之路.md) |
 | 2026-03-16 | EVATok：自适应长度视频令牌化实现高效视觉自回归生成 | 视频生成、计算机视觉 | [查看](./2026-03-16_EVATok_自适应长度视频令牌化实现高效视觉自回归生成.md) |
 | 2026-03-17 | Temporal Straightening for Latent Planning：时间拉直正则化大幅提升隐空间规划性能 | 强化学习、世界模型、机器人规划 | [查看](./2026-03-17_Temporal_Straightening_for_Latent_Planning.md) |
+| 2026-03-17 | LMEB: Long-horizon Memory Embedding Benchmark：长时记忆嵌入基准评测 | Agent、长时记忆、评测基准 | [查看](./LMEB_final.md) |
