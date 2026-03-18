@@ -37,7 +37,7 @@
 ## 2. 方法全景：时空一致性蒸馏架构
 
 ### 2.1 整体架构图
-![时空一致性蒸馏整体架构](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/096b453d3d4a4a79a5a407d6a9e3e8c6~tplv-k3u1fbpfcp-watermark.image)
+![时空一致性蒸馏整体架构](https://arxiv.org/html/2603.15287v1/x1.png)
 *图1：时空一致性蒸馏框架整体架构。包含教师模型、学生模型、空间一致性蒸馏模块和时间一致性蒸馏模块四个核心部分。*
 
 如图1所示，整个框架由四个核心模块组成：
@@ -63,9 +63,11 @@
 - 采用感知损失代替简单的MSE损失，更好地保留视觉质感
 
 空间一致性损失公式：
+
 $$
 L_{space} = \lambda_{pixel} \cdot L_{pixel} + \lambda_{percep} \cdot L_{percep} + \lambda_{feat} \cdot L_{feat}
 $$
+
 其中三个损失项分别对应像素级损失、感知损失和特征级损失，权重分别为1.0、0.1和0.05。
 
 ### 3.2 时间一致性蒸馏
@@ -77,9 +79,11 @@ $$
 这种方法的优势在于：它不仅约束了像素值的差异，还约束了运动的合理性，从根本上避免了运动不连贯的问题。
 
 时间一致性损失公式：
+
 $$
 L_{time} = \mathbb{E}\left[\|f_t - \text{warp}(f_{t-1}, \text{flow}_{t-1 \to t}^{teacher})\|_1\right]
 $$
+
 其中$f_t$是学生模型生成的第t帧，$\text{warp}$是光流warp操作，$\text{flow}_{t-1 \to t}^{teacher}$是教师模型生成的相邻帧之间的光流。
 
 ### 3.3 渐进式蒸馏策略
