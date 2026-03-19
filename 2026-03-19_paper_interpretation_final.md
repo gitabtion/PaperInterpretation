@@ -37,7 +37,7 @@ MoDA的核心创新在于打破了"固定深度"的限制：
 ## 2. 方法全景：MoDA整体架构
 
 ### 2.1 整体架构设计
-![MoDA整体架构图](https://arxiv.org/html/2603.15619/2603.15619v1/x1.png)
+*注：该论文HTML页面的图片受arxiv外链限制，无法直接加载，可访问原论文查看完整架构图：https://arxiv.org/pdf/2603.15619.pdf*
 *图1：Mixture-of-Depths Attention整体架构。将Transformer层分为多个深度组，每个token根据路由策略选择进入不同深度组计算，最终在注意力层混合所有深度的特征。*
 
 如图1所示，MoDA的整体流程分为三个核心步骤：
