@@ -358,11 +358,3 @@ $$
 - 分布对齐程度决定蒸馏成功与否
 
 这一框架不仅统一了先前关于"Aha时刻"的矛盾发现，还为推理模型的设计、训练和部署提供了清晰的指导原则。未来的推理系统应更加注重培养和利用认知语言化能力，而非仅仅优化过程执行的正确性。
-
----
-
-**参考文献：**
-
-1. Guo et al. (2025). DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
-2. Ton et al. (2025). Understanding Chain-of-Thought in LLMs through Information Theory
-3. Ye et al. (2025). LIMO: Less is

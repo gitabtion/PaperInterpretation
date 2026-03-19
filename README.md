@@ -22,3 +22,4 @@
 | 2026-03-17 | Temporal Straightening for Latent Planning：时间拉直正则化大幅提升隐空间规划性能 | 强化学习、世界模型、机器人规划 | [查看](./2026-03-17_Temporal_Straightening_for_Latent_Planning.md) |
 | 2026-03-17 | LMEB: Long-horizon Memory Embedding Benchmark：长时记忆嵌入基准评测 | Agent、长时记忆、评测基准 | [查看](./LMEB_final.md) |
 | 2026-03-19 | AI Can Learn Scientific Taste | AI科研 | [查看](./2026-03-19-AI-Can-Learn-Scientific-Taste.md) |
+| 2026-03-19 | Understanding Reasoning in LLMs through Strategic Information Allocation under Uncertainty | Chain-of-Thought、LLM推理 | [查看](./2026-03-19-CHAINOFTHOUGHT-Understanding-Reasoning-in-LLMs-through-Strategic-Information-Allocation-under-U.md) |
